@@ -56,9 +56,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-.car-logo img {
     padding: 9px;
 }
 
@@ -206,7 +203,9 @@ body {
 }
 
 .footer-details-container {
+    min-width: 65%;
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
 }
