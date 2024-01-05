@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #424242;
+}
+
+/* ? header */
+
+.header {
+    min-height: 75vh;
+    position: relative;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+
+    background-image: url('./assets/AdobeStock_441283052.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+/*? navbar  */
+
+.nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav p {
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav-img-container {
+    width: 120px;
+    height: 56px;
+}
+
+.nav-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.car-logo img {
+    padding: 9px;
+}
+
+
+/* ? main section video,info */
+
+.main-content-wrapper {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    width: 500px;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.info {
+    width: 500px;
+    font-weight: 300;
+}
+
+.info>* {
+    margin-bottom: 20px;
+}
+
+.addressing {
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.vehicle-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vehicle-info div p {
+    margin-top: 15px;
+}
+
+.labels {
+    font-weight: 500;
+}
+
+.advisor {
+    font-weight: 500;
+}
+
+.info-btn-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info-btn-container a {
+    text-decoration: none;
+    color: unset;
+}
+
+.btn {
+    padding: 6px 8px;
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.btn img {
+    width: 18px;
+}
+
+
+/*? footer  */
+
+.footer {
+    min-height: 25vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #424242;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 300;
+}
+
+.design-element {
+    height: 200px;
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-content {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    width: 250px;
+}
+
+.footer-logo > img {
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 5px;
+}
+
+.badges {
+    display: flex;
+    justify-content: space-around;
+}
+
+.badges img {
+    height: 27px;
+    width: 100%;
+}
+
+.footer-details-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-head {
+    font-weight: 500;
+}
+
+.detail {
+    font-size: 14px;
+    padding-top: 10px;
+    transform: translateX(20px);
+    display: flex;
+    gap: 5px;
+}
+
+.detail img {
+    width: 16px;
+    object-fit: contain;
+}
+
+.lower-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 0.6rem;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.copyright a {
+    color: white;
+}
+
+.social-container {
+    display: flex;
+    gap: 20px;
+}
+
+.social-container img {
+    width: 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .bg {
+        background-image: url('./assets/car-front-empire-state-building_23-2150897620.jpg');
+    }
+
+    .upper-footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .video-container {
+        width: 90%;
+    }
+
+    .info {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .nav p {
+        font-size: 4vw;
+    }
+
+    .design-element {
+        display: none;
+    }
+
+    .lower-footer {
+        justify-content: center;
+    }
+}

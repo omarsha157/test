@@ -1,0 +1,11 @@
+Dear user,
+This is a personalized report prepared by German Experts detailing the findings from the recent inspection of your vehicle.The purpose of this report is to provide you with a comprehensive overview of the condition of your vehicle, identifying any concerns or areas that may require attention.We appreciate your in German Experts to conduct a thorough inspection of your vehicle.
+
+Chassis No., Vehicle Make, Vehicle Model, Service Advisor Name, Phone Number, EmailId
+
+<div class="video-container">
+    <video onloadstart="this.volume=0.5" controls poster="./assets/GE play icon.jpg">
+        <source src="./2023-11-25-16-22-28.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
