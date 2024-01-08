@@ -18,4 +18,5 @@ const tl = gsap.timeline({duration: 0.3})
 
 tl.from('.nav', {y: '-100%'})
 tl.from('.main-content-wrapper', {x:'-100%'})
+tl.from('.title', {x: '-100%'}, '<0')
 tl.from('.footer',{y:'100%'})
