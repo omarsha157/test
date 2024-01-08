@@ -35,21 +35,14 @@ body {
 /*? navbar  */
 
 .nav {
-    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav p {
-    font-size: 1.7em;
-    font-weight: 600;
-    text-align: center;
-}
-
 .nav-img-container {
-    width: 120px;
-    height: 56px;
+    width: 150px;
+    height: 90px;
 }
 
 .nav-img-container img {
@@ -57,6 +50,13 @@ body {
     height: 100%;
     object-fit: contain;
     padding: 9px;
+}
+
+.title {
+    width: 100%;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
 }
 
 
@@ -239,6 +239,10 @@ body {
     gap: 0.6rem;
 }
 
+.sc-comp {
+    width: 180px;
+}
+
 .copyright {
     font-size: 12px;
     text-align: center;
@@ -249,6 +253,7 @@ body {
 }
 
 .social-container {
+    width: 180px;
     display: flex;
     gap: 20px;
 }
@@ -258,16 +263,16 @@ body {
 }
 
 @media only screen and (max-width: 1250px) {
-    .bg {
-        background-image: url('./assets/car-front-empire-state-building_23-2150897620.jpg');
-    }
-
     .upper-footer {
         justify-content: center;
     }
 }
 
 @media only screen and (max-width: 1050px) {
+
+    .bg {
+        background-image: url('./assets/car-front-empire-state-building_23-2150897620.jpg');
+    }
 
     .video-container {
         width: 90%;
@@ -276,12 +281,20 @@ body {
     .info {
         width: 90%;
     }
+
+    .lower-footer {
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 700px) {
 
     .nav p {
         font-size: 4vw;
+    }
+
+    .title {
+        font-size: 4.5vw;
     }
 
     .design-element {
