@@ -13,7 +13,7 @@ body {
 /* ? header */
 
 .header {
-    min-height: 75vh;
+    /* min-height: 75vh; */
     position: relative;
 }
 
@@ -63,7 +63,7 @@ body {
 /* ? main section video,info */
 
 .main-content-wrapper {
-    min-height: 60vh;
+    min-height: 56vh;
     width: 100%;
     display: flex;
     align-items: center;
